@@ -1,7 +1,7 @@
 import argparse
 from model import Model
 
-parser = argparse.ArgumentParser(description="FANet args")
+parser = argparse.ArgumentParser(description="CondConv args")
 parser.add_argument('--dataset',
                     type=str,
                     help='name of  dataset',
