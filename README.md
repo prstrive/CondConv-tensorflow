@@ -8,4 +8,10 @@ Conditional convolution in tensorflow2.0. This depository implements the method 
 Meanwhile, the softmax with a large temperature for kernel attention introduced by [Dynamic Convolution: Attention Over Convolution Kernels](https://arxiv.org/pdf/1912.03458.pdf) is adopted. 
  
 Another similar paper: [DyNet: Dynamic Convolution for Accelerating Convolutional Neural Networks](https://arxiv.org/pdf/2004.10694.pdf).
+
+### Start
+You can start according to the default arguments by `python main.py`. Or specify the arguments:
+```python
+python main.py --arch cond_cifar_resnet --num_layers 56 --num_experts 3 --dataset cifar10 --num_classes 10
+```
  
