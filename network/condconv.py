@@ -48,6 +48,6 @@ class CondConv2D(layers.Layer):
         routing_weights = self.routing(inputs)
         feature = routing_weights[:, 0] * tf.transpose(self.convs[0](inputs), perm=[1, 2, 3, 0])
         for i in range(1, len(self.convs)):
-            feature += routing_weights[:, i] * tf.transpose(self.convs[0](inputs), perm=[1, 2, 3, 0])
+            feature += routing_weights[:, i] * tf.transpose(self.convs[i](inputs), perm=[1, 2, 3, 0])
         feature = tf.transpose(feature, perm=[3, 0, 1, 2])
         return feature
