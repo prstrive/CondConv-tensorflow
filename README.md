@@ -1,5 +1,5 @@
 # CondConv-tensorflow
-Conditional convolution (Dynamic convolution) in tensorflow2.0. This depository implements the method described in the paper:
+Conditional convolution (Dynamic convolution) in tensorflow2.2.0. This depository implements the method described in the paper:
  
  >CondConv: Conditionally Parameterized Convolutions for Efficient Inference  
  >Brandon Yang, Gabriel Bender, Quoc V.Le, Jiquan Ngiam  
